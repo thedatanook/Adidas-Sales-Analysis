@@ -25,8 +25,8 @@ Insights and recommendations are provided on the following key areas :
 
 Detailed Resources: 
 
-- The Pre-Processing process utilized can be found [here](https://github.com/karlyndiary/Adidas-Sales-Analysis/tree/main/%5B01%5D%20Data%20Cleaning%20%26%20ETL). 
-- An interactive Excel dashboard can be downloaded [here](https://github.com/karlyndiary/Adidas-Sales-Analysis/tree/main/%5B02%5D%20Data%20Visualization).
+- The Pre-Processing process utilized can be found [here](https://github.com/thedatanook/Adidas-Sales-Analysis/tree/main/%5B01%5D%20Data%20Cleaning%20%26%20ETL). 
+- An interactive Excel dashboard can be downloaded [here](https://github.com/thedatanook/Adidas-Sales-Analysis/tree/main/%5B02%5D%20Data%20Visualization).
 
 # Data Structure
 
@@ -38,7 +38,7 @@ Adidas Sale's database structure as seen below consists of one table: Sales with
 
 The retailer’s product portfolio shows men’s street footwear as the top seller, while online channels and the West region lead in sales distribution. July sees peak monthly sales and profit, with pricing in the $30–$60 range driving strong unit volumes. August has the highest average units sold, aligning with seasonal demand. New York is the top-performing location, showing notable regional sales variation.
 
-Below is the overview page from the Excel dashboard and more examples are included throughout the report. The interactive dashboard can be viewed [here](https://github.com/karlyndiary/Adidas-Sales-Analysis/tree/main/%5B02%5D%20Data%20Visualization).
+Below is the overview page from the Excel dashboard and more examples are included throughout the report. The interactive dashboard can be viewed [here](https://github.com/thedatanook/Adidas-Sales-Analysis/tree/main/%5B02%5D%20Data%20Visualization).
 
 ### Adidas Sales Dashboard
 
