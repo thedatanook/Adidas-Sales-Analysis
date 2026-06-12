@@ -1,67 +1,75 @@
 # Adidas Sales Analysis
 
-![Adidas Sales](https://github.com/user-attachments/assets/da698f88-ce55-47e5-9af7-c74fa57fb4aa)
+ ![Adidas Sales](https://github.com/user-attachments/assets/da698f88-ce55-47e5-9af7-c74fa57fb4aa)
 
-# Table of Contents
-* [Project Background](#project-background)
-* [Data Structure](#data-structure)
-* [Executive Summary](#executive-summary)
-* [Recommendations](#recommendations)
 
-# Project Background 
-This project aims to explore and assess the performance of Adidas' sales through different retailers across regions in the US. We'll investigate factors like product performance, regional differences, sales methods (in-store vs. online), and profitability to uncover trends and opportunities for improving sales strategy.
+## Table of Contents
+- [Project Background](#project-background)
+- [Data Structure](#data-structure)
+- [Key Findings](#key-findings)
+- [Recommendations](#recommendations)
+---
 
-Insights and recommendations are provided on the following key areas : 
+## Project Background
+Adidas US sales data spanning multiple retailers, regions and sales channels was analysed to identify performance gaps and growth opportunities. The analysis covers product category performance, retailer profitability, seasonal demand patterns, and the shift toward online sales channels.
 
-- **Product Sales Performance**: Analyzing sales distribution across product categories to identify high-performing and underperforming items, guiding portfolio adjustments.
+## Data Structure
+ The dataset consists of a single table with 9,648 records covering Adidas US sales across multiple retailers, regions, products and sales channels.
 
-- **Top Retailer Performance**: Assessing retailer sales and profit figures to determine the highest and lowest performers, informing retailer-specific strategies.
+ | Column | Description |
+|--------|-------------|
+| `Retailer` | Store selling the product |
+| `Retailer ID` | Unique retailer identifier |
+| `Invoice Date` | Date of the transaction |
+| `Region` | US region (e.g. Northeast, West) |
+| `State` | US state |
+| `City` | City of sale |
+| `Product` | Product category (e.g. Men's Street Footwear) |
+| `Price per Unit` | Selling price per unit ($) |
+| `Units Sold` | Quantity sold |
+| `Total Sales` | Total revenue ($) |
+| `Operating Profit` | Profit after operating costs ($) |
+| `Operating Margin` | Profit as a percentage of sales |
+| `Sales Method` | In-store, Online, or Outlet |
 
-- **Seasonal Sales Trends**: Examining monthly sales and profit data to identify peak and low-performing months, providing insights for seasonal inventory and promotions.
+---
 
-- **Regional and Channel Contributions**: Analyzing sales distribution across regions and sales channels to understand market share and the impact of digital versus in-store sales.
+## Key Findings
+ 
+### Product Performance
 
-- **Pricing and Demand Patterns**: Evaluating sales by price range and seasonal unit sales trends to identify optimal pricing strategies and seasonal demand variations.
+- Men's Street Footwear leads all categories at $27.7M in sales — 93% more than the lowest category (Women's Athletic Footwear at $14.3M)
+- Women's Athletic Footwear is the weakest category despite Adidas' strong brand presence in the segment
 
-Detailed Resources: 
+### Retailer Performance
 
-- The Pre-Processing process utilized can be found [here](https://github.com/thedatanook/Adidas-Sales-Analysis/tree/main/%5B01%5D%20Data%20Cleaning%20%26%20ETL). 
-- An interactive Excel dashboard can be downloaded [here](https://github.com/thedatanook/Adidas-Sales-Analysis/tree/main/%5B02%5D%20Data%20Visualization).
+- West Gear is the top retailer at $32.4M in sales and $121.2M in profit
+- Amazon is the weakest retailer at $10.1M in sales — 68% below West Gear
 
-# Data Structure
+### Seasonal Trends
 
-Adidas Sale's database structure as seen below consists of one table: Sales with 9648 records.
+- July peaks at $12.6M in sales — 63% higher than the worst month (March at $7.7M)
+- August records the highest average units sold at 302 units/month
 
-# Executive Summary 
+### Regional & Channel Performance
 
-### Overview of Findings 
+- West region leads with 30% of total sales; Midwest trails at 14%
+- Online sales account for 41% of total revenue — the largest single channel
+- 2021 saw 324% YoY growth compared to 2020
 
-The retailer’s product portfolio shows men’s street footwear as the top seller, while online channels and the West region lead in sales distribution. July sees peak monthly sales and profit, with pricing in the $30–$60 range driving strong unit volumes. August has the highest average units sold, aligning with seasonal demand. New York is the top-performing location, showing notable regional sales variation.
+### Pricing
 
-Below is the overview page from the Excel dashboard and more examples are included throughout the report. The interactive dashboard can be viewed [here](https://github.com/thedatanook/Adidas-Sales-Analysis/tree/main/%5B02%5D%20Data%20Visualization).
+- The $27-$67 price range drives over 2M units sold — the clear sweet spot for Adidas customers
+- Demand drops sharply above $67, with under 200K units sold in the $67-$87 range
+- Low price points ($7-$27) also underperform at ~190K units — suggesting Adidas customers associate very low prices with lower quality or product relevance
+---
 
-### Adidas Sales Dashboard
+<img width="1861" height="1276" alt="Adidas Sales Dashboard" src="https://github.com/user-attachments/assets/2eba339a-022d-47c9-b14d-238926cdcd41" />
 
-- **Product Sales Performance**: The retailer's product portfolio comprises six categories, with men’s street footwear leading in total sales at $27,680,769, significantly surpassing women’s street footwear at $17,201,563. Conversely, women’s athletic footwear has the lowest sales, amounting to $14,315,521, followed closely by men’s athletic footwear at $20,577,180.
+## Recommendations
 
-- **Top Retailers by Sales and Profit**: West Gear emerges as the leading retailer, recording the highest sales at $32,409,558 and profit at $121,196,890. In contrast, Amazon shows the lowest performance, with sales and profit figures at $10,096,987 and $3,984,432, respectively.
-
-- **Monthly Sales Trends**: July marks the peak month with sales of $12,550,419 and profits of $4,780,283. Conversely, March experiences the lowest performance, with sales at $7,694,984 and profit at $2,946,398, suggesting seasonal fluctuations in consumer demand.
-
-- **Yearly Growth and Regional Distribution**: 2021 experienced a significant 324% growth compared to the previous year, with the West region contributing the largest share of sales at 30%, followed by the Northeast at 21%. The Midwest region trails with a 14% share. Notably, online sales accounted for 41% of the overall total, reflecting a sharp increase in digital commerce, with outlet stores following at 32%.
-
-- **Pricing Insights**: The highest-priced item, at $60, sold 1,275 units, while the lowest-priced item, at $7, saw a modest sale of 83 units, possibly reflecting lower popularity or smaller-sized items. The $30–$60 price range appears to be the optimal pricing zone, with robust sales volume observed. As prices increase beyond this range, a decline in unit sales is evident.
-
-- **Average Monthly Units Sold**: August recorded the highest average units sold at 302, with July and September close behind at 283 and 277 units, respectively. November, however, saw the lowest unit sales at 219, potentially reflecting seasonal demand for sports and streetwear during warmer months as customers prepare for outdoor activities.
-
-- **Sales by Location**: New York generates the highest sales at $60,000, followed by Florida at $41,000, while Maryland reports the lowest at $1,500. This geographical spread highlights regional demand variations across the retailer's markets.
-
-![Adidas Sales Dashboard](https://github.com/user-attachments/assets/95a66359-baed-4b67-ad2f-2abfd2624f54)
-
-# Recommendations
-
-Based on the uncovered insights, the following recommendations have been provided : 
-
-- **Expanding Product Offerings**: Given the strong performance of women’s apparel compared to athletic and street footwear, consider expanding the range of non-sport-specific items to further capture demand. In contrast, for men’s categories, focusing on athletic and street footwear could enhance sales and align with customer preferences.
-- **Seasonal Product Alignment**: Sales trends indicate higher demand during warmer months (June, July, and August) as compared to colder months (January, February, and March). To leverage these seasonal patterns, it would be beneficial to adjust product offerings accordingly, prioritizing warm-weather apparel during summer months and winter-specific items during colder months.
-- **Incentives for In-Store Purchases**: Offering tailored discounts and promotions for in-store purchases can drive foot traffic and increase sales within physical locations. For instance, implementing a program where online customers receive a voucher or discount on their next in-store purchase could encourage store visits. Additionally, offering seasonal items as complimentary incentives for meeting a purchase threshold may further stimulate in-store shopping.
+1. Invest in Women's Athletic Footwear — the weakest category at $14.3M; targeted marketing or a product line refresh could close the 93% gap with Men's Street Footwear
+2. Capitalise on July-August peak — align inventory builds, campaigns and new launches to the highest demand window
+3. Grow the online channel — already the largest at 41%; invest in digital marketing and personalisation to extend the lead
+4. Keep pricing in the $27-$67 sweet spot — over 2M units sold in this range; avoid aggressive premium pricing above $67 where demand drops sharply
+---
